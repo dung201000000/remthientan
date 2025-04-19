@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rèm Thiên Tân - Cửa Hàng Uy Tín</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <link rel="icon" type="c:\Users\admin\Pictures\Saved Pictures\z5581736454129_7bc15044651020ebcc7dd4e44fe1d54a.png" href="c:\Users\admin\Pictures\Saved Pictures\z5581736454129_7bc15044651020ebcc7dd4e44fe1d54a.png">
+</head>
+<body>
+<body data-scroll-container>
+  <header class="header" id="header">
+    <div class="logo">
+      <img src="c:\Users\admin\Pictures\Saved Pictures\z5581736454129_7bc15044651020ebcc7dd4e44fe1d54a.png" alt="Thiên Tân Store Logo">
+    </div>
+    <nav>
+      <a href="#home">Trang Chủ</a>
+      <a href="#products">Sản Phẩm</a>
+      <a href="#contact">Liên Hệ</a>
+      <a href="#support">tư vấn</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Chào mừng đến với Rèm Thiên Tân</h2>
+    <p>Khám phá các sản phẩm rèm cửa cao cấp và chất lượng hàng đầu!</p>
+  </section>
+
+  <section id="products" class="product-list">
+    <h2>Sản Phẩm Nổi Bật</h2>
+    <div class="san-pham-container">
+      <div class="san-pham">
+        <img src="image1.png" alt="Sản phẩm 1">
+        <h3>Rèm Cửa Cao Cấp</h3>
+        <p>Giá: 500.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+      <div class="san-pham">
+        <img src="image2.png" alt="Sản phẩm 2">
+        <h3>Rèm Cửa Cao Cấp</h3>
+        <p>Giá: 500.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+      <div class="san-pham">
+        <img src="image3.png" alt="Sản phẩm 3">
+        <h3>Rèm Cửa Cao Cấp</h3>
+        <p>Giá: 500.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+      <div class="san-pham">
+        <img src="image4.png" alt="Sản phẩm 4">
+        <h3>Rèm Cửa Chống Nắng</h3>
+        <p>Giá: 1.200.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+      <div class="san-pham">
+        <img src="image5.png" alt="Sản phẩm 5">
+        <h3>Rèm Cửa Cao Cấp</h3>
+        <p>Giá: 500.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+      <div class="san-pham">
+        <img src="image6.png" alt="Sản phẩm 6">
+        <h3>Rèm Cửa Cao Cấp</h3>
+        <p>Giá: 500.000 VND</p>
+        <button>Mua Ngay trên Shopee</button>
+      </div>
+    </div>    
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>© 2024 Rèm Thiên Tân - Mọi quyền được bảo lưu</p>
+    <p>Liên hệ: <a href="mailto:support@thientanstore.vn">support@thientanstore.vn</a></p>
+    <p>Địa chỉ: 100 ĐƯỜNG ĐINH TIÊN HOÀNG, PHỦ LÝ, HÀ NAM ,VIỆT NAM</p>
+    <p>created by: NGUYỄN TRẦN ĐỨC DŨNG 2010</p>
+  </footer>
+  <script>
+    // Dán đoạn mã JS ở đây
+    document.querySelectorAll('button').forEach((button, index) => {
+        button.addEventListener('click', () => {
+            let productLinks = [
+                'https://shopee.vn/product1',
+                'https://shopee.vn/product2',
+                'https://shopee.vn/product3',
+                'https://shopee.vn/product4',
+                'https://shopee.vn/product5',
+                'https://shopee.vn/product6'
+            ];
+
+            if (index < productLinks.length) {
+                window.open(productLinks[index], '_blank');
+            } else {
+                console.warn('Không có link cho sản phẩm này!');
+            }
+        });
+    });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
